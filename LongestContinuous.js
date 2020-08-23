@@ -1,5 +1,5 @@
 var longestContinuous = (arr) => { 
-  if (!Array.isArray(arr) || arr[0] === 'undefined' || !Number(arr[0])) {
+  if (!Array.isArray(arr) || arr[0] === 'undefined' || Number(arr[0]) === NaN) {
     return 0;
   }
 
