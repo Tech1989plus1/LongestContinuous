@@ -1,28 +1,27 @@
 exports.longestContinuous = (arr) => { 
-  if (!Array.isArray(arr) || arr[0] === 'undefined' || Number(arr[0]) === NaN) {
+  if (!Array.isArray(arr)) {
     return 0;
   }
-
-  var longest = 0;
-
+  
+  var longest = (typeof arr[0] === 'number' ? 1 : 0);
+  
   const recursive = (val, i, continuous, arr, length) => {
-    if (i > length) {return 0;}
+    if (i > length) {return continuous;}
 
-    if (Number(arr[i]) === NaN) {return 0;}
+    if (typeof arr[i] !== 'number') {return continuous;}
 
     if (val === arr[i]) {
-        recursive(val, i+1, continuous+1, arr, arr.length);   
+      continuous = recursive(val, i+1, continuous+1, arr, arr.length);   
     }
 
     if (continuous > longest) {
         longest = continuous;
     }
 
-    recursive(arr[i], i+1, 1, arr, arr.length);
-    
+    recursive(arr[i], i+1, 1, arr, arr.length);  
   }
+    
+  recursive(arr[0], 1, longest, arr, arr.length);
   
-  recursive(arr[0], 1, 1, arr, arr.length);
-
   return longest;
 }
