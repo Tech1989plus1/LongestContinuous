@@ -1,4 +1,4 @@
-var longestContinuous = (arr) => { 
+exports.longestContinuous = (arr) => { 
   if (!Array.isArray(arr) || arr[0] === 'undefined' || Number(arr[0]) === NaN) {
     return 0;
   }
@@ -26,5 +26,3 @@ var longestContinuous = (arr) => {
 
   return longest;
 }
-
-console.log(longestContinuous([1,1,1,1,4,5,3,3,3,7]))
