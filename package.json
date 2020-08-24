@@ -1,0 +1,20 @@
+{
+  "name": "LongestContinuous",
+  "version": "1.0.0",
+  "description": "Longest Continuous Stretch of a Single Number",
+  "main": "LongestContinuous.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech1989plus1/LongestContinuous.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tech1989plus1/LongestContinuous/issues"
+  },
+  "homepage": "https://github.com/Tech1989plus1/LongestContinuous#readme"
+}

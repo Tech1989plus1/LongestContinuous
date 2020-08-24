@@ -26,3 +26,5 @@ var longestContinuous = (arr) => {
 
   return longest;
 }
+
+console.log(longestContinuous([1,1,1,1,4,5,3,3,3,7]))
