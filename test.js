@@ -42,7 +42,4 @@ describe("Expects, to return the longest continuous stretch of a single number",
     expect(longestContinuous([0,0,0,0,0,0,0,0,0])).to.equal(9);
   });
 
-  
-
-
 });
